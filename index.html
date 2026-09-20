@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Lock - Seleção de Personagens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Secular+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+<body>
+    <main class="personagens-select">
+        <!-- Painel Principal de Exibição do Personagem -->
+        <section class="personagem-grande">
+            <!-- Yoichi Isagi -->
+            <div class="personagem selecionado" id="isagi" data-tema="isagi">
+                <img class="imagem" src="src/imagens/isagi.png" alt="Yoichi Isagi com uniforme do Blue Lock">
+                <div class="conteudo">
+                    <i class="logo"></i>
+                    <h2 class="nome-personagem">Yoichi Isagi</h2>
+                    <p class="descricao">Atacante focado em espacialização e percepção de jogo. Sua arma principal é a visão tridimensional e o chute de primeira, buscando sempre a evolução no Blue Lock.</p>
+                    <ul class="estatisticas">
+                        <li><span>Visão de Jogo</span><strong>98</strong></li>
+                        <li><span>Chute de Primeira</span><strong>90</strong></li>
+                        <li><span>Posicionamento</span><strong>95</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Shoei Baro -->
+            <div class="personagem" id="baro" data-tema="baro">
+                <img class="imagem" src="src/imagens/baro.png" alt="Shoei Baro com uniforme do Blue Lock">
+                <div class="conteudo">
+                    <i class="logo"></i>
+                    <h2 class="nome-personagem">Shoei Baro</h2>
+                    <p class="descricao">O "Rei" do campo. Jogador físico e dominante, especialista em chutes de média distância na curvatura exata do ângulo da trave, além de um drible agressivo e imprevisível.</p>
+                    <ul class="estatisticas">
+                        <li><span>Força Física</span><strong>96</strong></li>
+                        <li><span>Chute de Curva</span><strong>94</strong></li>
+                        <li><span>Agressividade</span><strong>99</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Seishiro Nagi -->
+            <div class="personagem" id="nagi" data-tema="nagi">
+                <img class="imagem" src="src/imagens/nagi.png" alt="Seishiro Nagi com uniforme do Blue Lock">
+                <div class="conteudo">
+                    <i class="logo"></i>
+                    <h2 class="nome-personagem">Seishiro Nagi</h2>
+                    <p class="descricao">Prodígio com controle de bola inacreditável. Capaz de dominar qualquer passe impossível com facilidade e criar finalizações geniais em frações de segundo.</p>
+                    <ul class="estatisticas">
+                        <li><span>Domínio de Bola</span><strong>99</strong></li>
+                        <li><span>Criatividade</span><strong>97</strong></li>
+                        <li><span>Finalização</span><strong>93</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Meguru Bachira -->
+            <div class="personagem" id="bachira" data-tema="bachira">
+                <img class="imagem" src="src/imagens/bachira.png" alt="Meguru Bachira com uniforme do Blue Lock">
+                <div class="conteudo">
+                    <i class="logo"></i>
+                    <h2 class="nome-personagem">Meguru Bachira</h2>
+                    <p class="descricao">Driblador nato movido por seu "monstro" interior. Possui um estilo de jogo imprevisível, focado em dribles lisos, passes rápidos e pura diversão em campo.</p>
+                    <ul class="estatisticas">
+                        <li><span>Drible</span><strong>98</strong></li>
+                        <li><span>Agilidade</span><strong>95</strong></li>
+                        <li><span>Passe</span><strong>91</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hyoma Chigiri -->
+            <div class="personagem" id="chigiri" data-tema="chigiri">
+                <img class="imagem" src="src/imagens/chigiri.png" alt="Hyoma Chigiri com uniforme do Blue Lock">
+                <div class="conteudo">
+                    <i class="logo"></i>
+                    <h2 class="nome-personagem">Hyoma Chigiri</h2>
+                    <p class="descricao">Conhecido como a "Pantera Redimida". Sua velocidade de corrida explosiva nas pontas supera a de qualquer outro jogador, permitindo cruzar o campo em segundos.</p>
+                    <ul class="estatisticas">
+                        <li><span>Velocidade</span><strong>99</strong></li>
+                        <li><span>Aceleração</span><strong>98</strong></li>
+                        <li><span>Passe Curto</span><strong>88</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de Botões de Seleção -->
+        <ul class="lista-de-personagens">
+            <li>
+                <button class="botao selecionado" id="isagi-btn" aria-label="Selecionar Yoichi Isagi">
+                    <img src="src/imagens/icone-isagi.png" alt="Ícone Yoichi Isagi">
+                </button>
+            </li>
+            <li>
+                <button class="botao" id="baro-btn" aria-label="Selecionar Shoei Baro">
+                    <img src="src/imagens/icone-baro.png" alt="Ícone Shoei Baro">
+                </button>
+            </li>
+            <li>
+                <button class="botao" id="nagi-btn" aria-label="Selecionar Seishiro Nagi">
+                    <img src="src/imagens/icone-nagi.png" alt="Ícone Seishiro Nagi">
+                </button>
+            </li>
+            <li>
+                <button class="botao" id="bachira-btn" aria-label="Selecionar Meguru Bachira">
+                    <img src="src/imagens/icone-bachira.png" alt="Ícone Meguru Bachira">
+                </button>
+            </li>
+            <li>
+                <button class="botao" id="chigiri-btn" aria-label="Selecionar Hyoma Chigiri">
+                    <img src="src/imagens/icone-chigiri.png" alt="Ícone Hyoma Chigiri">
+                </button>
+            </li>
+        </ul>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
